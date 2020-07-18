@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tingyu Wu portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+	<!-- Start header -->
+	<header>		
+  		<div id="header-sroll"> 
+			<i class="fa fa-bars toggleNav"></i>
+			<div class="overlay">
+  			<nav>
+   				<i class="fa fa-times close"></i>
+    			<ul>
+      				<li><a href="index_try.html">home</a></li>
+      				<li><a href="about me.html">about me</a></li>
+      				<li><a href="portfolio.html">portfolio</a></li>
+      				<li><a href="about me.html">contact me</a></li>
+   				 </ul>
+  			</nav>
+			</div>
+  		<h1>TingYu. WU</h1>
+		</div>
+	</header>
+<!-- End header -->
+	<div class="worksdetail"></div>
+	<div class="grid-container workscontent">
+		<div class="grid-x grid-margin-x">
+			<div class="cell text-center content_title align-middle">Aqung</div>
+			<div class="cell text-center content_subtitle">
+				<h5>project details</h5>
+				<span>Create a logo of jewelry shop</span>
+				<h4>logotype development</h4>
+			</div>
+		</div>
+		<div class="grid align-middle text-center">
+				<div class="cell small-12 medium-4 large-2">
+				<img src="images/works_01_a.jpg">
+				<img src="images/works_01_b.jpg">
+				<img src="images/works_01_c.jpg">
+				<img src="images/works_01_f.jpg">
+				</div>
+		</div>
+		<div class="cell text-center content_subtitle">
+			<h4>tag label and tote bag</h4>
+		</div>
+		<div class="grid-x grid-margin-x medium-margin-collapse">
+  			<div class="cell small-6">
+    		<img src="images/works_01.jpg">
+  			</div>
+  			<div class="cell small-6">
+    		<img src="images/works_01_d.jpg">
+  			</div>
+		</div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+  $('.toggleNav').on('click',function(){
+    $('.overlay').addClass('open');
+  });
+  $('.close').on('click',function(){
+    $('.overlay').removeClass('open');
+  });
+});
+
+$(window).scroll(function () {
+    var sc = $(window).scrollTop()
+    if (sc > 100) {
+        $("#header-sroll,.fa-bars").addClass("small")
+    } else {
+        $("#header-sroll,.fa-bars").removeClass("small")
+    }
+});
+</script>
+</body>
+</html>

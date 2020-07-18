@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About me</title>
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+	<header>		
+  		<div id="header-sroll"> 
+			<i class="fa fa-bars toggleNav"></i>
+			<div class="overlay">
+  			<nav>
+   				<i class="fa fa-times close"></i>
+    			<ul>
+      				<li><a href="index_try.html">home</a></li>
+      				<li><a href="about me.html">about me</a></li>
+      				<li><a href="portfolio.html">portfolio</a></li>
+      				<li><a href="about me.html">contact me</a></li>
+   				 </ul>
+  			</nav>
+			</div>
+  		<h1>TingYu. WU</h1>
+		</div>
+	</header>
+		<div class="grid-x">
+  			<div class="cell small-12 medium-12 large-6">
+  				<section class="section_1"><img src="images/mmexport1555025252618.jpg" alt="" class="img_1"></section>
+				
+  			</div>
+  			<div class="cell small-12 medium-12 large-6">
+  				<article class="aboutme_info">
+  					<h1>creative. passionate</br>focused</h1>
+  					<p class="text-justify">I am Tingyu, a web designer and UI/Ux designer. I specialize in web design, user experience and interface design. I believe that design is a process, and that through research and exploration, the right solution will present itself.</p>
+  					<p>If you have a project that you'd like to work together on,  please to get in touch.</p>
+  					<address>
+  						<a href="mailto:varydavy@gmail.com"><i class="far fa-envelope"></i>varydavy@gmail.com</a>
+  					</address>
+  				</article>
+  				<div class="insidesocial"><a href="https://www.facebook.com/tingyu.wu.37" target="_blank"><i class="fab fa-facebook-f"></i></a></br>
+					<a href="https://www.instagram.com/yuyuvarydavy?r=nametag" target="_blank" title=""><i class="fab fa-instagram"></i></a></div>
+
+					
+  			</div>
+  		</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+  $('.toggleNav').on('click',function(){
+    $('.overlay').addClass('open');
+  });
+  $('.close').on('click',function(){
+    $('.overlay').removeClass('open');
+  });
+});
+
+$(window).scroll(function () {
+    var sc = $(window).scrollTop()
+    if (sc > 100) {
+        $("#header-sroll,.fa-bars").addClass("small")
+    } else {
+        $("#header-sroll,.fa-bars").removeClass("small")
+    }
+});
+</script>
+</body>
+</html>
